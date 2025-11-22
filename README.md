@@ -74,21 +74,27 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Project Structure
+## 📁 Directory Structure
 
 ```text
 Aerial-Object-Detection/
+├── .gitignore               # Git ignore rules
+├── README.md                # Project Documentation
 ├── app.py                   # Main Streamlit Application
-├── requirements.txt         # Project Dependencies
-├── data.yaml                # YOLOv8 Configuration
-├── best_transfer_model.pth  # Trained ResNet18 Weights
-├── notebooks/               # Jupyter Notebooks for Training
-│   ├── 1_Preprocessing.ipynb
-│   ├── 2_Train_Classification.ipynb
-│   └── 3_Train_YOLO.ipynb
-├── runs/                    # YOLOv8 Training Results
+├── best_custom_cnn.pth      # Trained Custom CNN Weights
+├── best_transfer_model.pth  # Trained ResNet18 Weights (Used in App)
+├── data-preprocessing.ipynb # Notebook for data loading & augmentation
+├── data.yaml                # YOLOv8 Configuration file
+├── requirements.txt         # Python Dependencies
+├── train-YOLO.ipynb         # Notebook for training YOLOv8
+├── train-classification.ipynb # Notebook for training CNNs
+├── yolo11n.pt               # Pre-trained YOLOv11n weights
+├── yolov8n.pt               # Pre-trained YOLOv8n weights
+├── runs/                    # YOLOv8 Training Outputs (Auto-generated)
 │   └── detect/weights/best.pt
-└── README.md                # Project Documentation
+└── data/                    # Dataset Directory (Local only, not on GitHub)
+    ├── classification_dataset/
+    └── object_detection_Dataset/
 ```
 
 ## Future Improvements
