@@ -1,0 +1,17 @@
+# Ignore Dataset Folders
+data/
+object_detection_Dataset/
+classification_dataset/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Ignore Virtual Env
+drone_env/
+.env
+venv/
+
+# Ignore large files (Optional, if larger than 100MB)
+*.mp4

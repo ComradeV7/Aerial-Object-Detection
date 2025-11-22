@@ -1,0 +1,8 @@
+names:
+- Bird
+- Drone
+nc: 2
+path: C:\Users\comra\Dev\Aerial-Object-Detection\data\object_detection_Dataset
+test: test/images
+train: train/images
+val: valid/images
